@@ -1,0 +1,22 @@
+.weather-app {
+  font-family: 'Arial', sans-serif;
+  color: white;
+  background-color: #1c1c3c; /* Your background color */
+  padding: 20px;
+  /* padding: 50px; */
+}
+
+.weather-stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  /* display: inline-flex; */
+  
+}
+
+/* Add media queries for responsiveness if necessary */
+@media (max-width: 768px) {
+  .weather-stats {
+    flex-direction: column;
+  }
+}
