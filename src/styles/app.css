@@ -1,0 +1,48 @@
+html, body, div, span, h1, h2, h3, p, a, ol, ul, li, form, label, table, tbody, tfoot, thead, tr, th, td, figure {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.App {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.home-container.light {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    color: white;
+    background: linear-gradient(0deg, #08669B 0%, #2F9DB5 100%);
+}
+
+.home-container.dark {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    color: white;
+    background: linear-gradient(0deg, #12084E  0%, #5C469D 100%);
+}
+
+.info-container.light {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    color: white;
+    background: linear-gradient(0deg, #2F9DB5 0%, #08669B 100%);
+}
+
+.info-container.dark {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    color: white;
+    background: linear-gradient(0deg, #5C469D 0%, #12084E 100%);
+}

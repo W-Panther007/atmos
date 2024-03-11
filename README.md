@@ -18,3 +18,16 @@ npm run dev
 ```
 
 Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
+
+
+## To view website on Mobile
+
+Run the development server with host option:
+
+```bash
+npm run dev -- --host
+```
+
+Get the IP Address of the hosting machine.
+
+Open [http://host-machine-ip:5173](http://host-machine-ip:5173) with your browser to see the result.
