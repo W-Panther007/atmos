@@ -15,7 +15,7 @@ function Banner() {
         <>
             <div className="banner" style={bannerBackground}>
                 <div className="title">
-                    <h1>ATMOS</h1>
+                    <p>ATMOS</p>
                 </div>
                 
                 <div className="toggle">

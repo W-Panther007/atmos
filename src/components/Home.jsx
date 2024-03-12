@@ -13,9 +13,9 @@ function Home() {
 
 
     const city = "London";
-    const temp = 18;
+    const temp = 20;
     const weatherCondition = "Sunny";
-    const feelTemp = 16;
+    const feelTemp = 18;
 
     return (
         <>

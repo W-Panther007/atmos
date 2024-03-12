@@ -7,14 +7,14 @@ function Card({ city, weatherIconSrc, temp, condition, feelTemp }) {
         <>
             <div className="card-container">
                 <div className="cityName">
-                    <h2>{city}</h2>
+                    <p>{city}</p>
                 </div>
                 <div className="imgCondition">
                     <img src={weatherIconSrc} alt="Weather Condition Icon"/>
                 </div>
                 <div className="tempCondition">
-                    <h1>{temp}°</h1>
-                    <h3>{condition}</h3>
+                    <p id="temp">{temp}°</p>
+                    <p id="cond">{condition}</p>
                 </div>
                 <div className="feelsLike">
                     <p>FEELS LIKE {feelTemp}°</p>
