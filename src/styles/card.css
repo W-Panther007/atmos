@@ -1,0 +1,54 @@
+.card-container {
+    width: 250px;
+    height: 420px;
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.31) ;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    margin-top: 90px;
+    margin-left: 70px;
+
+}
+
+.card-container .cityName {
+    font-size: 2.1em;
+    font-weight: 500;
+    margin-top: 1px;
+}
+
+.card-container .imgCondition {
+    margin-top: -2.4em;
+}
+
+.card-container .imgCondition img {
+    width: 180px;
+    height: auto;
+}
+
+.card-container .tempCondition {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -3em;
+    font-weight: 300;
+}
+
+.card-container .tempCondition #temp {
+    font-size: 4em;
+    margin-left: 0.2em;
+}
+
+.card-container .tempCondition #cond {
+    font-size: 1.8em;
+    margin-left: -0.1em;
+}
+
+.card-container .feelsLike p {
+    font-weight: 200;
+}
