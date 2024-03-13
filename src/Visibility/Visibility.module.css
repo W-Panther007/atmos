@@ -2,21 +2,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: 10px 0;
   }
   
   .visibilityBox {
-    background-color: #1c1c3c;
+    background-color: hsla(257, 6%, 25%, 0.188);
     color: white;
-    padding: 20px 40px;
+    padding: 10px 40px;
     border: 2px solid hsla(0, 0%, 100%, 0.31);
     border-radius: 40px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    max-width: 600px; 
+    max-width: 100%;
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
   }
 
   .iconContainer {

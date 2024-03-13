@@ -1,22 +1,22 @@
-.weather-app {
-  font-family: 'Arial', sans-serif;
-  color: white;
-  background-color: #1c1c3c; /* Your background color */
-  padding: 20px;
-  /* padding: 50px; */
-}
-
-.weather-stats {
+.weatherApp {
   display: flex;
-  justify-content: space-between;
-  padding: 20px 0;
-  /* display: inline-flex; */
-  
+  flex-direction: column;
 }
 
-/* Add media queries for responsiveness if necessary */
-@media (max-width: 768px) {
-  .weather-stats {
-    flex-direction: column;
-  }
+.weatherStats {
+  display: flex;
+  justify-content: space-between; /* This will space out your child components evenly */
+}
+
+/* Add styling for Visibility, Precipitation, and Wind components so they have the correct width */
+/* Assuming each component has a top-level container div, you could add a class to each and style them like this: */
+
+.visibilityContainer {
+  width: 100%; /* Full width */
+  /* Additional styling */
+}
+
+.precipitationContainer, .windContainer {
+  width: 33.33%; /* Each takes up one-third of the space */
+  /* Additional styling */
 }
