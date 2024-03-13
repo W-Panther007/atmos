@@ -1,0 +1,29 @@
+.sun-container{
+    border: 2px solid rgba(255, 255, 255, 0.31) ;
+    margin: 10px;
+    border-radius: 25px;
+    max-width: 600px;
+    max-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+.sunrise, .sunset{
+    display: flex;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+    column-gap: 5px;
+}
+
+div div img{
+    max-height: 50px;
+}
+
+.sunrise-time, .sunset-time{
+    text-align: center;
+}
+
+.header{
+    color: rgba(255, 255, 255, 0.31)
+}
