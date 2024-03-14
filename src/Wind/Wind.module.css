@@ -17,22 +17,29 @@
   width: 33%; /* or a percentage value if you want it to be responsive */
   height: 33%; /* same as width to make it square */
   box-sizing: border-box; /* Make sure padding and border are included in the total width/height */
+  margin-right: 1%;
 }
   
 .icon {
-  width: 20px; 
-  height: 20px; /* Make the height equal to the width to maintain the aspect ratio */
+  width: 16px; 
+  height: 16px; /* Make the height equal to the width to maintain the aspect ratio */
 }
 
 .title {
   font-size: 0.7em;
   margin-bottom: 10px;
   opacity: 0.7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .value {
   font-size: 1.5em;
   margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;  /* Keeps the text fixed on a single row */
 }
 
 .subtitle {

@@ -10,7 +10,6 @@
   border: 2px solid hsla(0, 0%, 100%, 0.31);
   border-radius: 15px;
   text-align: center;
-  margin: 0 5px;
   backdrop-filter: blur(10px); /* Apply blur effect */
   -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
@@ -18,17 +17,21 @@
   width: 33%; /* or a percentage value if you want it to be responsive */
   height: 33%; /* same as width to make it square */
   box-sizing: border-box; /* Make sure padding and border are included in the total width/height */
+  margin-left: 1%;
 }
   
 .icon {
-  width: 20px; 
-  height: 20px; /* Make the height equal to the width to maintain the aspect ratio */
+  width: 16px; 
+  height: 16px; /* Make the height equal to the width to maintain the aspect ratio */
 }
 
 .title {
-  font-size: 0.7em;
+  font-size: 0.8em;
   margin-bottom: 10px;
   opacity: 0.7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .value {

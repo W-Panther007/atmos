@@ -7,8 +7,7 @@ function Visibility({ visibility }) {
     return (
       <div className={styles.visibilityContainer}>
         <div className={styles.visibilityBox}>
-        <img src={visibilityIcon} alt="Visibility" className={styles.icon} />
-          <div className={styles.title}>VISIBILITY</div>
+          <div className={styles.title}><img src={visibilityIcon} alt="Visibility" className={styles.icon} />VISIBILITY</div>
           <div className={styles.value}>{visibility} KM</div>
         </div>
       </div>
