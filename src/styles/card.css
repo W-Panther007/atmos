@@ -9,8 +9,8 @@
     flex-direction: column;
     justify-content: space-evenly;
 
-    margin-top: 90px;
-    margin-left: 70px;
+    margin-top: 80px;
+    margin-left: calc(calc((100vw - 250px) / 2) - 2px);
 
 }
 
