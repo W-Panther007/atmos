@@ -6,6 +6,10 @@
     --swiper-pagination-bullet-inactive-opacity: 0.5;
 }
 
+.mySwiper .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-top: 90px !important;
+}
+
 .mySwiper .swiper-pagination-bullets{
-    bottom: -10px !important;
+    bottom: 0px !important;
 }
