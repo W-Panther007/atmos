@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Visibility.module.css';
-import visibilityIcon from '../assets/view.jpg';
+import visibilityIcon from '../../assets/view.jpg';
 
 
 function Visibility({ visibility }) {

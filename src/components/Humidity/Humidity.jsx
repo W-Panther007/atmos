@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Humidity.module.css';
-import humidityIcon from '../assets/humidity.jpg';
+import humidityIcon from '../../assets/humidity.jpg';
 
 function Humidity({ humidityVal }) {
     return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Wind.module.css';
-import windIcon from '../assets/wind.jpg';
+import windIcon from '../../assets/wind.jpg';
 
 function Wind({ windSpeed }) {
     return (

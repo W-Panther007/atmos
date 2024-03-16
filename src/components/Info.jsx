@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/info.css';
-import Widgets from '../Widgets/Widget.jsx';
+import Widgets from './Widgets/Widget.jsx';
 
 function Info() {
   const cityName = "London";

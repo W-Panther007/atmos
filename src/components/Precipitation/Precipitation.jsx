@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Precipitation.module.css';
-import precipitationIcon from '../assets/drop.jpg';
+import precipitationIcon from '../../assets/drop.jpg';
 
 function Precipitation({ chanceOfRain }) {
     return (
