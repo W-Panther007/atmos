@@ -1,0 +1,15 @@
+.swiper-light, .swiper-dark {
+    --swiper-pagination-bullet-inactive-color: #D9D9D9;
+    --swiper-pagination-bullet-width: 14px;
+    --swiper-pagination-bullet-height: 14px;
+    --swiper-pagination-bullet-inactive-opacity: 0.5;
+    padding-bottom: 80px !important;
+}
+
+.swiper-light {
+    --swiper-pagination-color: #00FFB2;
+}
+
+.swiper-dark {
+    --swiper-pagination-color: #EB2C7A;
+}
