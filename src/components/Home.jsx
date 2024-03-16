@@ -19,7 +19,7 @@ function Home() {
     ]);
 
 
-    // COEDE FOR DELETE CARD:
+    // CODE FOR DELETE CARD:
     
     // Initialize a timer ID for managing the long press
     let longPressTimerId;
