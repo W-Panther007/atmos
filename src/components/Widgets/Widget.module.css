@@ -6,18 +6,14 @@
 
 .weatherStats {
   display: flex;
-  justify-content: space-between; /* This will space out your child components evenly */
+  justify-content: space-between; /* This will space out child components evenly */
 }
 
-/* Add styling for Visibility, Precipitation, and Wind components so they have the correct width */
-/* Assuming each component has a top-level container div, you could add a class to each and style them like this: */
 
 .visibilityContainer {
-  width: 100%; /* Full width */
-  /* Additional styling */
+  width: 90%; /* Full width */
 }
 
 .precipitationContainer, .windContainer {
-  width: 33.33%; /* Each takes up one-third of the space */
-  /* Additional styling */
+  width: 30%; /* Each takes up 30% of the space */
 }
