@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   margin: auto;
-  margin-top: -10px;
+  margin-top: -15px;
   margin-left: 10px;
   margin-bottom: -10px;
   font-size: 15px;
@@ -10,29 +10,25 @@
   color: lightgray;
 }
 
-
 .hours {
   gap: 5px;
 }
 
 
-
-
 .container {
   background-color: rgba(61, 59, 66, 0.25);
   margin: auto;
+  padding: 10px;
   text-align: center;
   border-radius: 20px;
   width: 90%;
   font-size: 15px;
 }
 
-
 .clock {
   width: 15px;
   height: 15px;
 }
-
 
 .weatherpic {
   margin-top: -5px;
@@ -41,14 +37,12 @@
   height: 45px;
 }
 
-
 p {
   font-weight: bold;
   font-size: small;
   color: lightgray;
   margin-left: -9px;
 }
-
 
 .hour-mark {
   width: 65px;
