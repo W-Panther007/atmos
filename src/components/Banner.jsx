@@ -6,14 +6,10 @@ import '../styles/banner.css';
 
 function Banner() {
     const { theme, toggleTheme } = useContext(ThemeContext);
-    const bannerBackground = {
-        background: theme === 'light' ? '#1e667a' : '#2B244D',
-    };
-
 
     return(
         <>
-            <div className="banner" style={bannerBackground}>
+            <div className="banner" style={{background: theme === 'light' ? '#1e667a' : '#2B244D'}}>
                 <div className="title">
                     <p>ATMOS</p>
                 </div>
