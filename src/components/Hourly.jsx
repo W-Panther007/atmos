@@ -1,12 +1,13 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import '../styles/Hourly.css'; // Import CSS file for styling
+import '../styles/hourly.css'; // Import CSS file for styling
 import clock from '../assets/clock.png';
 import sunny from '../assets/sunny.png';
 
 
 
 function Hourly() {
+
 
     const data = [
         { hour: "1", img: sunny, temp: "12°" },
@@ -22,6 +23,7 @@ function Hourly() {
         { hour: "11", img: sunny, temp: "12°" },
         { hour: "12", img: sunny, temp: "12°" }
     ];
+
 
 
     return (
@@ -52,7 +54,6 @@ function Hourly() {
       </>
     );
 };
-
 
 
 export default Hourly;
