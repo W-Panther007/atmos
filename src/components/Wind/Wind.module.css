@@ -35,7 +35,7 @@
 
 .value {
   font-size: 1.5em;
-  margin-bottom: 5px;
+  margin-bottom: 8%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;  /* Keeps the text fixed on a single row */
@@ -43,7 +43,6 @@
 
 .subtitle {
   font-size: 0.5em;
-  margin-bottom: 2%;
 }
   
 
