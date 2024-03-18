@@ -1,4 +1,5 @@
-const API_KEY = '885df1b5232ec10e6c2b8b622fdbf9af';
+const API_KEY = 'c989b743d32fb1ad7b24437ad6dc56b3';
+
 const BASE_URL = "https://api.openweathermap.org/data/3.0/onecall";
 
 async function fetchCoordinatesForCity(city) {
