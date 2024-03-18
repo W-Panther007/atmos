@@ -1,12 +1,15 @@
 .sun-container{
-    border: 2px solid rgba(255, 255, 255, 0.31) ;
-    margin: 10px;
-    border-radius: 25px;
-    max-width: 600px;
+    width: 90%;
     max-height: 50px;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+    font-size: 0.9em;
+    margin: 10px;
+    padding: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.31);
+    border-radius: 25px;
+    background-color: hsla(257, 6%, 25%, 0.15);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 .sunrise, .sunset{
@@ -21,9 +24,12 @@
 }
 
 .sunrise-time, .sunset-time{
+    font-weight: 400;
     text-align: center;
 }
 
-.header{
-    color: rgba(255, 255, 255, 0.31)
+.sun-header{
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.51)
+    
 }
