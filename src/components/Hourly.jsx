@@ -9,7 +9,7 @@ import 'swiper/css/bundle';
 function Hourly() {
 
 	const data = [
-    	{ hour: "Now", img: sunny, temp: "12°" },
+    	{ hour: "NOW", img: sunny, temp: "12°" },
         { hour: "05", img: sunny, temp: "12°" },
         { hour: "06", img: sunny, temp: "12°" },
         { hour: "07", img: sunny, temp: "12°" },
