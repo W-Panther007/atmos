@@ -18,7 +18,7 @@ async function fetchCoordinatesForCity(city) {
   }
 
 async function fetchWeatherForCoordinates(lat, lon) {
-    const response = await fetch(`${BASE_URL}?lat=${lat}&lon=${lon}&exclude=minutely,hourly,daily,alerts&appid=${API_KEY}&units=metric`);
+    const response = await fetch(`${BASE_URL}?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`);
     if (!response.ok) {
       throw new Error(`Weather data fetch failed: ${response.statusText}`);
     }
