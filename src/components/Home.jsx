@@ -46,7 +46,7 @@ const atmosphereCodes = {
     '781': 'tornado',
 }
 
-function Home() {
+function Home(props) {
     const { theme } = useContext(ThemeContext);
     const [showAddCityForm, setShowAddCityForm] = useState(false);
     const [cardsData, setCardsData] = useState([]);
@@ -83,6 +83,7 @@ function Home() {
             feelTemp: Math.round(newFeelTemp), 
         };
         setCardsData([...cardsData, newCard]);
+        props.setHasCities(true);
     };
 
 
@@ -120,6 +121,7 @@ function Home() {
             if (confirmDelete) {
                 const newCardsData = cardsData.filter((_, cardIndex) => cardIndex !== index);
                 setCardsData(newCardsData);
+                props.setHasCities(newCardsData.length > 0);
             }
         }, 2000); // 2 seconds
     };
