@@ -58,20 +58,20 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
-    width: 15%; /* Adjust to fit 4 boxes in a row */
-    height: auto; /* Make height adjust to content */
+    width: 15%; 
+    height: auto; 
     box-sizing: border-box;
-    margin: 1% 1%; /* Provide uniform margin */
+    margin: 1% 1%; 
   }
   
   .icon {
-    width: 30px; /* Adjust icon size */
+    width: 30px;
     height: 30px;
   }
   
   .title {
     font-size: 0.8em;
-    margin: 5px 0; /* Adjust margin */
+    margin: 5px 0; 
     opacity: 0.7;
   }
   
@@ -80,6 +80,6 @@
   }
   
   .subtitle {
-    font-size: 0.6em; /* Adjust subtitle font size */
+    font-size: 0.6em; 
   }
 }

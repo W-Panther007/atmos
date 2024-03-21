@@ -1,95 +1,60 @@
 .visibilityContainer {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 10px 0;
-    margin-right: 1%;
-    margin-left: 1%;
-  }
-  
-  .visibilityBox {
-    background-color: hsla(257, 6%, 25%, 0.188);
-    color: white;
-    padding: 1.5% 20%;
-    border: 2px solid hsla(0, 0%, 100%, 0.31);
-    border-radius: 40px;
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    max-width: 100%;
-    backdrop-filter: blur(10px); /* Apply blur effect */
-    -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
-  }
-  
-  .title {
-    font-size: 1.2em;
-    opacity: 0.7;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-left: -25%;
-  }
-  
-  .value {
-    font-size: 1.5em;
-    text-align: right;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-right: -20%;
-  }
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 1%;
+}
 
-  .icon {
-    width: 14%; 
-    height: 14%;
-    float: left;
-  }
+.visibilityBox {
+  background-color: hsla(257, 6%, 25%, 0.188);
+  color: white;
+  padding: 10px; 
+  border: 2px solid hsla(0, 0%, 100%, 0.31);
+  border-radius: 40px;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  max-width: 95%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
 
-  /* Apply styles for desktop screens with a minimum width of 1024px */
+.title {
+  display: flex; 
+  align-items: center;
+  font-size: 1em; 
+  margin: 0 10px; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.icon {
+  width: 30px; 
+  height: 30px;
+  margin-right: 10px; 
+}
+
+.value {
+  font-size: 1.2em; 
+  margin: 0 10px; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 @media screen and (min-width: 1024px) {
-
   .visibilityBox {
-    background-color: hsla(257, 6%, 25%, 0.188);
-    color: white;
-    padding: 1.5% 20%;
-    border: 2px solid hsla(0, 0%, 100%, 0.31);
-    border-radius: 40px;
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
-    display: flex;
-    justify-content: space-between;
-    align-items: left;
-    width: 10%;
-    backdrop-filter: blur(10px); /* Apply blur effect */
-    -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
-  }
-  
-  
-  .icon {
-    height: 30px;
-    width: 30px;
-    margin-right: 1%; /* Add some space between the icon and the title */
-    vertical-align: middle; /* Align the icon vertically to the middle */
+    width: 48%;
   }
 
   .title {
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    font-size: 0.8em;
-    margin: 5px 0; /* Adjust margin */
-    opacity: 0.7;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 0.9em; 
   }
-  
+
   .value {
-    font-size: 1.5em;
-  }
-  
-  .subtitle {
-    font-size: 0.6em; /* Adjust subtitle font size */
+    font-size: 1.2em;
   }
 }
