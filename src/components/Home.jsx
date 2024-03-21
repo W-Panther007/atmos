@@ -14,7 +14,7 @@ function Home() {
     const [cardsData, setCardsData] = useState([
         { city: "London", weatherIconSrc: sunnyImg, temp: 20, condition: "Sunny", feelTemp: 18 },
         { city: "London", weatherIconSrc: sunnyImg, temp: 20, condition: "Sunny", feelTemp: 18 },
-        { city: "London", weatherIconSrc: sunnyImg, temp: 20, condition: "Sunny", feelTemp: 18 },
+        { city: "Manchester", weatherIconSrc: sunnyImg, temp: 20, condition: "Sunny", feelTemp: 18 },
         // Add more cards here...
     ]);
 
@@ -40,6 +40,16 @@ function Home() {
         clearTimeout(longPressTimerId);
     };
 
+    // Right click for desktop users to delete a card
+    const handleRightClick = (event, index) => {
+        event.preventDefault(); // Prevent the default context menu
+        const confirmDelete = window.confirm("Do you want to delete this card?");
+        if (confirmDelete) {
+            const newCardsData = cardsData.filter((_, cardIndex) => cardIndex !== index);
+            setCardsData(newCardsData);
+        }
+    };
+
     return (
         <>
             <Banner />
@@ -55,6 +65,7 @@ function Home() {
                     <SwiperSlide key={index}
                         onTouchStart={() => handleLongPressStart(index)}
                         onTouchEnd={handleLongPressCancel}
+                        onContextMenu={(event) => handleRightClick(event, index)}
                     >
                         <Card
                             city={card.city.toUpperCase()}
