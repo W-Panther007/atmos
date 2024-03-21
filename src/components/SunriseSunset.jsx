@@ -6,10 +6,10 @@ import '../styles/sunrisesunset.css';
 
 // Make sure to run in the terminal 'npm install axios' and 'npm install date-fns'
 
-function SunriseSunset({ sunriseIcon, sunsetIcon }) {
+function SunriseSunset({ sunriseIcon, sunsetIcon, location}) {
     const [sunriseTime, setSunriseTime] = useState('');
     const [sunsetTime, setSunsetTime] = useState('');
-    const city = 'London';
+    const city = location;
     const apiKey = 'c989b743d32fb1ad7b24437ad6dc56b3';
 
     useEffect(() => {
@@ -54,6 +54,7 @@ function SunriseSunset({ sunriseIcon, sunsetIcon }) {
 SunriseSunset.propTypes = {
     sunriseIcon: PropTypes.string.isRequired,
     sunsetIcon: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
 };
 
 export default SunriseSunset;

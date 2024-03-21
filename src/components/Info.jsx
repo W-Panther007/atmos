@@ -5,10 +5,12 @@ import SunriseSunset from './SunriseSunset';
 
 function Info() {
 
+    const loc = 'london'
+
     return(
         <>
             <h1>INFO PAGE</h1>
-            <SunriseSunset sunriseIcon={sunriseImg} sunsetIcon={sunsetImg} sunriseTime="06:25" sunsetTime="19:40"/>
+            <SunriseSunset sunriseIcon={sunriseImg} sunsetIcon={sunsetImg} location={loc}/>
         </>
     );
 
