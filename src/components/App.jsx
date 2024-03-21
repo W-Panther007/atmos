@@ -56,7 +56,7 @@ function App() {
 	const [hasCities, setHasCities] = useState(false);
 	const [cardsData, setCardsData] = useState([]);
 	const [activeIndex, setActiveIndex] = useState(0);
-  	const appRef = useRef(null);
+  	const appRef = useRef(null); // Used for accessing app container DOM
 
 	// Toggle function for theme switch
 	const toggleTheme = () => {
