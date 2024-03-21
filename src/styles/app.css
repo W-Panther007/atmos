@@ -37,7 +37,7 @@ body {
 }
 
 .info-container.light {
-    min-height: 100vh;
+    min-height: 130vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -49,7 +49,7 @@ body {
 }
 
 .info-container.dark {
-    min-height: 100vh;
+    min-height: 130vh;
     width: 100vw;
     display: flex;
     flex-direction: column;

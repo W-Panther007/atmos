@@ -35,6 +35,8 @@ function Info(props) {
                 const { lat, lon } = await fetchCoordinatesForCity(cityName); // Calls function from weatherService.js
                 const weatherData = await fetchWeatherForCoordinates(lat, lon); // Calls function from weatherService.js
 
+
+
                 const sunriseTime = props.timeConversion(weatherData.current.sunrise, weatherData.timezone_offset, true); // Calls convertUnixTimeToLocalTime in App.jsx
                 const sunsetTime = props.timeConversion(weatherData.current.sunset, weatherData.timezone_offset, true); // Calls convertUnixTimeToLocalTime in App.jsx
 
