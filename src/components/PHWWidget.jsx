@@ -3,12 +3,7 @@ import humidityIcon from '../assets/humidity.png';
 import windIcon from '../assets/wind.png';
 import '../styles/phwWidget.css';
 
-function PHWWidget() {
-
-    const precipitation = 4;
-    const humidity = 70;
-    const wind = 5;
-
+function PHWWidget(props) {
     return(
         <>
             <div className="w-container">
@@ -18,7 +13,7 @@ function PHWWidget() {
                         <h4 className='individual-title' id='precip'>PRECIPITATION</h4>
                     </div>
                     <div className="individual-value">
-                        <p>{precipitation}%</p>
+                        <p>{props.precip}%</p>
                     </div>
                     <div className="widget-caption">
                         <p>Chance of Rain</p>
@@ -30,7 +25,7 @@ function PHWWidget() {
                         <h4 className='individual-title'>HUMIDITY</h4>
                     </div>
                     <div className="individual-value">
-                        <p>{humidity}%</p>
+                        <p>{props.humidlvl}%</p>
                     </div>
                     <div className="widget-caption"></div>
                 </div>
@@ -40,7 +35,7 @@ function PHWWidget() {
                         <h4 className='individual-title'>WIND</h4>
                     </div>
                     <div className="individual-value">
-                        <p>{wind}MPH</p>
+                        <p>{props.windSpeed}MPH</p>
                     </div>
                     <div className="widget-caption">
                         <p>Speed</p>

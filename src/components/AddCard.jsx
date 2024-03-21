@@ -3,6 +3,7 @@ import '../styles/addCard.css';
 
 function AddCard({ onAddClick }) {
     
+    // onAddClick is part of rendering the pop up form for adding a city
     return(
         <>
             <div className="add-card-container">

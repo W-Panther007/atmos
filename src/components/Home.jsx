@@ -7,19 +7,17 @@ import { fetchCoordinatesForCity, fetchWeatherForCoordinates } from './weatherSe
 import Banner from './Banner.jsx';
 import Card from './Card.jsx';
 import AddCard from './AddCard.jsx';
-
 import 'swiper/css/bundle';
 import '../styles/home.css';
 
 
-
-
 function Home(props) {
     const { theme } = useContext(ThemeContext);
-    const [showAddCityForm, setShowAddCityForm] = useState(false);
-    const [cityInput, setCityInput] = useState('');
+    const [showAddCityForm, setShowAddCityForm] = useState(false); // Tracks whether to show pop up form
+    const [cityInput, setCityInput] = useState(''); // Tracks the input from adding a city
 
-    const swiperClass = theme === 'light' ? 'swiper-light' : 'swiper-dark';
+    // Based on themecontext, adjust the class name for the swiper used below
+    const swiperClass = theme === 'light' ? 'swiper-light' : 'swiper-dark'; 
     
     const handleOpenAddCityForm = () => {
         setShowAddCityForm(true);
@@ -29,18 +27,24 @@ function Home(props) {
         setShowAddCityForm(false);
     };
 
+    const handleCityInputChange = (event) => {
+        setCityInput(event.target.value);
+    };
+
+    // Creating a new card and adding it to the view (Card Carousel)
     const addCard = (newCity, conditionCode, newTemp, newFeelTemp, sunrise, sunset) => {
         const currentTimeInSeconds = new Date().getTime() / 1000;
         const isDay = currentTimeInSeconds >= sunrise && currentTimeInSeconds < sunset;
         let conditionKey;
 
+        // When the weather is clear, is it sunny during the day or is it clear at night. Timing is determined using the sunrise and sunset times
         if (conditionCode === 800) {
             conditionKey = isDay ? '800-day' : '800-night';
         } else {
-            conditionKey = conditionCode.toString().startsWith('7') ? conditionCode.toString() : conditionCode.toString()[0];
+            conditionKey = conditionCode.toString().startsWith('7') ? conditionCode.toString() : conditionCode.toString()[0]; // if code begins with 7 then keep the entire code, else only get the first digit
         }
 
-        let conditionText = props.atmosphereCodes[conditionCode.toString()] || props.weatherConditions[conditionKey];
+        let conditionText = props.atmosphereCodes[conditionCode.toString()] || props.weatherConditions[conditionKey]; // If atmosphere code then render accordingly, else render the correct pic
         
         const newCard = {
             city: newCity,
@@ -49,16 +53,12 @@ function Home(props) {
             condition: conditionText,
             feelTemp: Math.round(newFeelTemp), 
         };
-        // setCardsData([...cardsData, newCard]);
+
         props.setCardsData(currentCardsData => [...currentCardsData, newCard]);
         props.setHasCities(true);
     };
 
-
-    const handleCityInputChange = (event) => {
-        setCityInput(event.target.value);
-    };
-
+    // Calls functions from weatherService.js using city name as argument - then adds card
     const handleAddCityFormSubmit = async (event) => {
         event.preventDefault();
         const city = cityInput.trim();
@@ -98,14 +98,10 @@ function Home(props) {
     };
 
 
-
+    // On change of card, update the activeIndex variable with the index of the active card
     const handleChange = (swiper) => {props.setActiveIndex(swiper.activeIndex)};
     
-
-
-    
-    
-
+    // Renders the Card Carousel by iterating arr of added cities / cards. Only render the pop up form when the condition to render it is true
     return (
         <>
             <Banner />
