@@ -6,14 +6,4 @@
 
 .weatherStats {
   display: flex;
-  justify-content: space-between; /* This will space out child components evenly */
-}
-
-
-.visibilityContainer {
-  width: 90%; /* Full width */
-}
-
-.precipitationContainer, .windContainer {
-  width: 30%; /* Each takes up 30% of the space */
 }
